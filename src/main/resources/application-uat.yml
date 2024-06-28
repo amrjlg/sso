@@ -1,0 +1,16 @@
+
+# 启动端口
+server:
+  port:
+spring:
+  # redis相关配置
+  redis:
+    host:
+    username:
+    password:
+    database:
+  # MySQL 相关配置
+  datasource:
+    username:
+    url:
+    password:

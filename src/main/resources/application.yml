@@ -1,0 +1,34 @@
+spring:
+  profiles:
+    active: uat
+  datasource:
+    url: jdbc:mysql://localhost:3306/engineer
+    username: root
+    password: '0231625530'
+  jpa:
+    show-sql: true
+
+#  redis:
+#    host:
+#    password:
+
+server:
+  port: 8080
+logging:
+  level:
+    sql: debug
+    org:
+      hibernate:
+        SQL: debug
+        type:
+          descriptor:
+            sql: trace
+sso:
+  azure:
+    base-path: azure
+    refresh: refresh
+    logout: logout
+    end_session: end_session
+    callback: callback
+    authorize: authorize
+    get-redirect: /get/redirect
